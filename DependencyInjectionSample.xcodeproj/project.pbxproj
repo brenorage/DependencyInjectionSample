@@ -13,6 +13,16 @@
 		0752C95522237F9800F050AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0752C95422237F9800F050AE /* Assets.xcassets */; };
 		0752C95822237F9800F050AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0752C95622237F9800F050AE /* LaunchScreen.storyboard */; };
 		0752C96322237F9800F050AE /* DependencyInjectionSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C96222237F9800F050AE /* DependencyInjectionSampleTests.swift */; };
+		0752C970222381A400F050AE /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0752C96F222381A400F050AE /* StoryboardViewController.storyboard */; };
+		0752C972222381B900F050AE /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C971222381B900F050AE /* StoryboardViewController.swift */; };
+		0752C97B222381F800F050AE /* ViewCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C97A222381F800F050AE /* ViewCodeController.swift */; };
+		0752C97E2223827E00F050AE /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C97D2223827E00F050AE /* Randomizer.swift */; };
+		0752C983222383C300F050AE /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C981222383C300F050AE /* XibViewController.swift */; };
+		0752C984222383C300F050AE /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0752C982222383C300F050AE /* XibViewController.xib */; };
+		0752C9892223845000F050AE /* XibReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C9872223845000F050AE /* XibReusableViewController.swift */; };
+		0752C98A2223845000F050AE /* XibReusableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0752C9882223845000F050AE /* XibReusableViewController.xib */; };
+		0752C98C2223873400F050AE /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C98B2223873400F050AE /* ViewCode.swift */; };
+		0752C99222238CF100F050AE /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0752C99122238CF100F050AE /* Reusable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,16 @@
 		0752C95E22237F9800F050AE /* DependencyInjectionSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyInjectionSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0752C96222237F9800F050AE /* DependencyInjectionSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionSampleTests.swift; sourceTree = "<group>"; };
 		0752C96422237F9800F050AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0752C96F222381A400F050AE /* StoryboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardViewController.storyboard; sourceTree = "<group>"; };
+		0752C971222381B900F050AE /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		0752C97A222381F800F050AE /* ViewCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeController.swift; sourceTree = "<group>"; };
+		0752C97D2223827E00F050AE /* Randomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+		0752C981222383C300F050AE /* XibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
+		0752C982222383C300F050AE /* XibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
+		0752C9872223845000F050AE /* XibReusableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibReusableViewController.swift; sourceTree = "<group>"; };
+		0752C9882223845000F050AE /* XibReusableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibReusableViewController.xib; sourceTree = "<group>"; };
+		0752C98B2223873400F050AE /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		0752C99122238CF100F050AE /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0752C99222238CF100F050AE /* Reusable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +83,7 @@
 				0752C94C22237F9600F050AE /* DependencyInjectionSample */,
 				0752C96122237F9800F050AE /* DependencyInjectionSampleTests */,
 				0752C94B22237F9600F050AE /* Products */,
+				0752C99022238CF100F050AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +99,10 @@
 		0752C94C22237F9600F050AE /* DependencyInjectionSample */ = {
 			isa = PBXGroup;
 			children = (
+				0752C97C2223825F00F050AE /* Util */,
+				0752C979222381D700F050AE /* Storyboard */,
+				0752C978222381D300F050AE /* Xib */,
+				0752C977222381CD00F050AE /* ViewCode */,
 				0752C94D22237F9600F050AE /* AppDelegate.swift */,
 				0752C94F22237F9600F050AE /* ViewController.swift */,
 				0752C95122237F9600F050AE /* Main.storyboard */,
@@ -96,6 +122,67 @@
 			path = DependencyInjectionSampleTests;
 			sourceTree = "<group>";
 		};
+		0752C977222381CD00F050AE /* ViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				0752C97A222381F800F050AE /* ViewCodeController.swift */,
+				0752C98B2223873400F050AE /* ViewCode.swift */,
+			);
+			path = ViewCode;
+			sourceTree = "<group>";
+		};
+		0752C978222381D300F050AE /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				0752C986222383D800F050AE /* WithReusable */,
+				0752C985222383CD00F050AE /* WithoutReusable */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		0752C979222381D700F050AE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0752C96F222381A400F050AE /* StoryboardViewController.storyboard */,
+				0752C971222381B900F050AE /* StoryboardViewController.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0752C97C2223825F00F050AE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0752C97D2223827E00F050AE /* Randomizer.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0752C985222383CD00F050AE /* WithoutReusable */ = {
+			isa = PBXGroup;
+			children = (
+				0752C982222383C300F050AE /* XibViewController.xib */,
+				0752C981222383C300F050AE /* XibViewController.swift */,
+			);
+			path = WithoutReusable;
+			sourceTree = "<group>";
+		};
+		0752C986222383D800F050AE /* WithReusable */ = {
+			isa = PBXGroup;
+			children = (
+				0752C9882223845000F050AE /* XibReusableViewController.xib */,
+				0752C9872223845000F050AE /* XibReusableViewController.swift */,
+			);
+			path = WithReusable;
+			sourceTree = "<group>";
+		};
+		0752C99022238CF100F050AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0752C99122238CF100F050AE /* Reusable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +193,7 @@
 				0752C94622237F9600F050AE /* Sources */,
 				0752C94722237F9600F050AE /* Frameworks */,
 				0752C94822237F9600F050AE /* Resources */,
+				0752C98D22238AC200F050AE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -177,8 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0752C984222383C300F050AE /* XibViewController.xib in Resources */,
+				0752C98A2223845000F050AE /* XibReusableViewController.xib in Resources */,
 				0752C95822237F9800F050AE /* LaunchScreen.storyboard in Resources */,
 				0752C95522237F9800F050AE /* Assets.xcassets in Resources */,
+				0752C970222381A400F050AE /* StoryboardViewController.storyboard in Resources */,
 				0752C95322237F9600F050AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,13 +283,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0752C98D22238AC200F050AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Reusable.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Reusable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0752C94622237F9600F050AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0752C95022237F9600F050AE /* ViewController.swift in Sources */,
+				0752C97B222381F800F050AE /* ViewCodeController.swift in Sources */,
+				0752C983222383C300F050AE /* XibViewController.swift in Sources */,
+				0752C972222381B900F050AE /* StoryboardViewController.swift in Sources */,
 				0752C94E22237F9600F050AE /* AppDelegate.swift in Sources */,
+				0752C9892223845000F050AE /* XibReusableViewController.swift in Sources */,
+				0752C97E2223827E00F050AE /* Randomizer.swift in Sources */,
+				0752C98C2223873400F050AE /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +480,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DependencyInjectionSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +501,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DependencyInjectionSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
