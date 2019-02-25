@@ -16,17 +16,22 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "StoryboardViewController", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "StoryboardViewController") as? StoryboardViewController else { return }
         vc.randomizer = randomizer
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func openViewCode(_ sender: Any) {
         let vc = ViewCodeController(randomizer)
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func openXib(_ sender: Any) {
-        let vc = XibViewController.init(nibName: "XibViewController", bundle: nil)
-        self.present(vc, animated: true, completion: nil)
+        let vc = XibViewController(nibName: "XibViewController", bundle: nil, randomizer: randomizer)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func openReusableXib(_ sender: Any) {
+        let vc = XibReusableViewController(randomizer)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {

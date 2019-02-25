@@ -12,11 +12,20 @@ class XibViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
     
-    var randomizer: Randomizer?
+    let randomizer: Randomizer
+    
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, randomizer: Randomizer) {
+        self.randomizer = randomizer
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultLabel.text = randomizer?.get()
+        resultLabel.text = randomizer.get()
     }
 }

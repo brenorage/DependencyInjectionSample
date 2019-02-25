@@ -20,9 +20,10 @@
 		0752C983222383C300F050AE /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C981222383C300F050AE /* XibViewController.swift */; };
 		0752C984222383C300F050AE /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0752C982222383C300F050AE /* XibViewController.xib */; };
 		0752C9892223845000F050AE /* XibReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C9872223845000F050AE /* XibReusableViewController.swift */; };
-		0752C98A2223845000F050AE /* XibReusableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0752C9882223845000F050AE /* XibReusableViewController.xib */; };
+		0752C98A2223845000F050AE /* XibReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0752C9882223845000F050AE /* XibReusableView.xib */; };
 		0752C98C2223873400F050AE /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C98B2223873400F050AE /* ViewCode.swift */; };
 		0752C99222238CF100F050AE /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0752C99122238CF100F050AE /* Reusable.framework */; };
+		0752C9942223993100F050AE /* XibReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0752C9932223993100F050AE /* XibReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +54,10 @@
 		0752C981222383C300F050AE /* XibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
 		0752C982222383C300F050AE /* XibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
 		0752C9872223845000F050AE /* XibReusableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibReusableViewController.swift; sourceTree = "<group>"; };
-		0752C9882223845000F050AE /* XibReusableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibReusableViewController.xib; sourceTree = "<group>"; };
+		0752C9882223845000F050AE /* XibReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibReusableView.xib; sourceTree = "<group>"; };
 		0752C98B2223873400F050AE /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		0752C99122238CF100F050AE /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
+		0752C9932223993100F050AE /* XibReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +171,8 @@
 		0752C986222383D800F050AE /* WithReusable */ = {
 			isa = PBXGroup;
 			children = (
-				0752C9882223845000F050AE /* XibReusableViewController.xib */,
+				0752C9882223845000F050AE /* XibReusableView.xib */,
+				0752C9932223993100F050AE /* XibReusableView.swift */,
 				0752C9872223845000F050AE /* XibReusableViewController.swift */,
 			);
 			path = WithReusable;
@@ -266,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0752C984222383C300F050AE /* XibViewController.xib in Resources */,
-				0752C98A2223845000F050AE /* XibReusableViewController.xib in Resources */,
+				0752C98A2223845000F050AE /* XibReusableView.xib in Resources */,
 				0752C95822237F9800F050AE /* LaunchScreen.storyboard in Resources */,
 				0752C95522237F9800F050AE /* Assets.xcassets in Resources */,
 				0752C970222381A400F050AE /* StoryboardViewController.storyboard in Resources */,
@@ -317,6 +320,7 @@
 				0752C94E22237F9600F050AE /* AppDelegate.swift in Sources */,
 				0752C9892223845000F050AE /* XibReusableViewController.swift in Sources */,
 				0752C97E2223827E00F050AE /* Randomizer.swift in Sources */,
+				0752C9942223993100F050AE /* XibReusableView.swift in Sources */,
 				0752C98C2223873400F050AE /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

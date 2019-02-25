@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gqn-XX-lvI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,45 +18,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UQ-2o-JGD">
-                                <rect key="frame" x="103" y="40" width="169" height="30"/>
-                                <state key="normal" title="Abre VC com storyboard"/>
-                                <connections>
-                                    <action selector="openStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uup-B7-vZy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kD-RN-qDI">
-                                <rect key="frame" x="105.5" y="90" width="164" height="30"/>
-                                <state key="normal" title="Abre VC com ViewCode"/>
-                                <connections>
-                                    <action selector="openViewCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4h5-AJ-5cT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXU-qs-9UM">
-                                <rect key="frame" x="129" y="140" width="117" height="30"/>
-                                <state key="normal" title="Abre VC com Xib"/>
-                                <connections>
-                                    <action selector="openXib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tty-8x-bpi"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SvC-E0-B8Y">
+                                <rect key="frame" x="20" y="84" width="335" height="563"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UQ-2o-JGD">
+                                        <rect key="frame" x="83" y="0.0" width="169" height="126"/>
+                                        <color key="backgroundColor" red="1" green="0.78780442879556833" blue="0.088311458095353568" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Abre VC com storyboard"/>
+                                        <connections>
+                                            <action selector="openStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uup-B7-vZy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kD-RN-qDI">
+                                        <rect key="frame" x="85.5" y="146" width="164" height="125.5"/>
+                                        <color key="backgroundColor" red="1" green="0.78780442879556833" blue="0.088311458095353568" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Abre VC com ViewCode"/>
+                                        <connections>
+                                            <action selector="openViewCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4h5-AJ-5cT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXU-qs-9UM">
+                                        <rect key="frame" x="59.5" y="291.5" width="216" height="126"/>
+                                        <color key="backgroundColor" red="1" green="0.78780442879556833" blue="0.088311458095353568" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Abre VC com Xib sem Reusable"/>
+                                        <connections>
+                                            <action selector="openXib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tty-8x-bpi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnW-5v-GII">
+                                        <rect key="frame" x="59" y="437.5" width="217" height="125.5"/>
+                                        <color key="backgroundColor" red="1" green="0.78780442879556833" blue="0.088311458095353568" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Abre VC com Xib com Reusable"/>
+                                        <connections>
+                                            <action selector="openReusableXib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkS-XL-Vch"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xXU-qs-9UM" firstAttribute="top" secondItem="3kD-RN-qDI" secondAttribute="bottom" constant="20" id="TW5-mm-iUY"/>
-                            <constraint firstItem="1UQ-2o-JGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dnz-Ir-N66"/>
-                            <constraint firstItem="xXU-qs-9UM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhs-6C-CWe"/>
-                            <constraint firstItem="1UQ-2o-JGD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nkh-wX-YlZ"/>
-                            <constraint firstItem="3kD-RN-qDI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uy8-UL-odh"/>
-                            <constraint firstItem="3kD-RN-qDI" firstAttribute="top" secondItem="1UQ-2o-JGD" secondAttribute="bottom" constant="20" id="vsX-Vw-ecF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SvC-E0-B8Y" secondAttribute="bottom" constant="20" id="PPV-G1-Kra"/>
+                            <constraint firstItem="SvC-E0-B8Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="W2z-Ky-obN"/>
+                            <constraint firstItem="SvC-E0-B8Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bOG-28-99m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SvC-E0-B8Y" secondAttribute="trailing" constant="20" id="czx-Pr-aZE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="openStoryboard" destination="1UQ-2o-JGD" id="QvW-Bx-aUU"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="8qQ-mr-ccI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UYk-vy-OnO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gqn-XX-lvI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ia1-OM-TEH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kTu-EK-zTf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3W1-GN-9Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="27"/>
         </scene>
     </scenes>
 </document>
